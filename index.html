@@ -72,7 +72,7 @@
     <div class="container">
       <!-- ===============navbar================= -->
       <nav class="lg:pt-[48px] md:pt-8 sm:pt-7 pt-5">
-        <div class=" relative z-50">
+        <div clclass="pointer-events-none" ass=" relative z-50">
           <div class="justify-between flex items-center">
             <div class="relative z-10">
               <a class="text-2xl font-normal font-hyper" href="/">
@@ -88,13 +88,13 @@
             <div id="mobile_view"
               class="max-lg:fixed flex flex-col justify-center items-center max-lg:bg-transparent backdrop-blur-[40px] max-lg:w-full max-lg:h-full max-lg:-top-full max-lg:-right-full transition-all ease-in-out duration-300">
               <ul class="flex gap-10 max-lg:text-center max-lg:flex-col">
-                <li><a class="text-sm font-normal" href="">ABOUT</a></li>
-                <li><a class="text-sm font-normal" href="">CHARACTER</a></li>
-                <li><a class="text-sm font-normal" href="">GALLERY</a></li>
-                <li><a class="text-sm font-normal" href="">HOW IT WORKS</a></li>
-                <li><a class="text-sm font-normal" href="">ROADMAP</a></li>
-                <li><a class="text-sm font-normal" href="">TEAM</a></li>
-                <li><a class="text-sm font-normal" href="">FAQ</a></li>
+                <li><a class="text-sm font-normal" href="#about">ABOUT</a></li>
+                <li><a class="text-sm font-normal" href="#charactor">CHARACTER</a></li>
+                <li><a class="text-sm font-normal" href="#gallery">GALLERY</a></li>
+                <li><a class="text-sm font-normal" href="#howit">HOW IT WORKS</a></li>
+                <li><a class="text-sm font-normal" href="#roadmap">ROADMAP</a></li>
+                <li><a class="text-sm font-normal" href="#team">TEAM</a></li>
+                <li><a class="text-sm font-normal" href="#faq">FAQ</a></li>
               </ul>
               <div class="flex gap-4 justify-end mt-12 lg:hidden">
                 <a href=""><img class="bg-white hover:bg-offBlue bg-opacity-10 rounded-full"
@@ -154,8 +154,7 @@
   </section>
 
   <!-- ==============about============= -->
-  <section
-    class="px-3 bg-[url(./assets/image/webp/about-bg.webp)] -mt-1 bg-center bg-no-repeat bg-cover pt-24 max-lg:pt-[250px] pb-[274px] max-lg:pb-0">
+  <section id="about" class="px-3 bg-[url(./assets/image/webp/about-bg.webp)] -mt-1 bg-center bg-no-repeat bg-cover pt-24 max-lg:pt-[250px] pb-[274px] max-lg:pb-0">
     <div class="container relative w-full flex items-center max-lg:flex-col">
       <div class="w-6/12 relative max-lg:w-full">
         <img class="max-lg:max-w-[600px] w-full absolute -top-60 max-sm:-top-44 left-1/2 -translate-x-1/2"
@@ -194,8 +193,7 @@
   </section>
 
   <!-- =============character=================== -->
-  <section
-    class="px-3 flex items-center pt-[100px] pb-[200px] bg-[url(./assets/image/webp/slider-bg.webp)] bg-cover bg-no-repeat relative -mt-1">
+  <section id="charactor" class="px-3 flex items-center pt-[100px] pb-[200px] bg-[url(./assets/image/webp/slider-bg.webp)] bg-cover bg-no-repeat relative -mt-1">
     <div class="container">
       <div class="flex items-center max-lg:flex-col">
         <div class="w-6/12 max-lg:w-full">
@@ -255,7 +253,7 @@
   </section>
 
   <!-- ==============gallery============== -->
-  <section class="pt-[216px] bg-[url(./assets/image/webp/gallry-bg.webp)] bg-center bg-cover bg-no-repeat -mt-4">
+  <section id="gallery" class="pt-[216px] bg-[url(./assets/image/webp/gallry-bg.webp)] bg-center bg-cover bg-no-repeat -mt-4">
     <div class="container px-3">
       <div class="flex justify-between items-center max-lg:flex-col">
         <div
@@ -314,35 +312,34 @@
     </div>
     <div class="flex flex-col gap-y-5">
       <div class="grid grid-flow-col gap-4 overflow-x-auto">
-        <img src="./assets/image/webp/grid-1.webp" alt="manga-page-one" class="max-w-[320px] h-[480px]">
-        <img src="./assets/image/webp/grid-2.webp" alt="manga-page-two" class="h-[480px] max-w-[320px]">
-        <img src="./assets/image/webp/grid-3.webp" alt="manga-page-three" class="h-[480px] max-w-[320px]">
-        <img src="./assets/image/webp/grid-4.webp" alt="manga-page-four" class="h-[480px] max-w-[320px]">
-        <img src="./assets/image/webp/grid-5.webp" alt="manga-page-five" class="h-[480px] max-w-[320px]">
+        <img src="./assets/image/webp/grid-1.webp" alt="manga-page-one" class="pointer-events-none max-w-[320px] h-[480px]">
+        <img src="./assets/image/webp/grid-2.webp" alt="manga-page-two" class="pointer-events-none h-[480px] max-w-[320px]">
+        <img src="./assets/image/webp/grid-3.webp" alt="manga-page-three" class="pointer-events-none h-[480px] max-w-[320px]">
+        <img src="./assets/image/webp/grid-4.webp" alt="manga-page-four" class="pointer-events-none h-[480px] max-w-[320px]">
+        <img src="./assets/image/webp/grid-5.webp" alt="manga-page-five" class="pointer-events-none h-[480px] max-w-[320px]">
       </div>
 
       <div class="grid grid-flow-col gap-4 overflow-x-auto">
-        <img src="./assets/image/webp/grid-6.webp" alt="manga-page-one" class="max-w-[320px] h-[480px]">
-        <img src="./assets/image/webp/grid-7.webp" alt="manga-page-two" class="h-[480px] max-w-[320px]">
-        <img src="./assets/image/webp/grid-8.webp" alt="manga-page-three" class="h-[480px] max-w-[320px]">
-        <img src="./assets/image/webp/grid-9.webp" alt="manga-page-four" class="h-[480px] max-w-[320px]">
-        <img src="./assets/image/webp/grid-10.webp" alt="manga-page-five" class="h-[480px] max-w-[320px]">
+        <img src="./assets/image/webp/grid-6.webp" alt="manga-page-one" class="pointer-events-none max-w-[320px] h-[480px]">
+        <img src="./assets/image/webp/grid-7.webp" alt="manga-page-two" class="pointer-events-none h-[480px] max-w-[320px]">
+        <img src="./assets/image/webp/grid-8.webp" alt="manga-page-three" class="pointer-events-none h-[480px] max-w-[320px]">
+        <img src="./assets/image/webp/grid-9.webp" alt="manga-page-four" class="pointer-events-none h-[480px] max-w-[320px]">
+        <img src="./assets/image/webp/grid-10.webp" alt="manga-page-five" class="pointer-events-none h-[480px] max-w-[320px]">
       </div>
 
       <div class="grid grid-flow-col gap-4 overflow-x-auto">
-        <img src="./assets/image/webp/grid-11.webp" alt="manga-page-one" class="max-w-[320px] h-[480px]">
-        <img src="./assets/image/webp/grid-12.webp" alt="manga-page-two" class="h-[480px] max-w-[320px]">
-        <img src="./assets/image/webp/grid-13.webp" alt="manga-page-three" class="h-[480px] max-w-[320px]">
-        <img src="./assets/image/webp/grid-14.webp" alt="manga-page-four" class="h-[480px] max-w-[320px]">
-        <img src="./assets/image/webp/grid-15.webp" alt="manga-page-five" class="h-[480px] max-w-[320px]">
+        <img src="./assets/image/webp/grid-11.webp" alt="manga-page-one" class="pointer-events-none max-w-[320px] h-[480px]">
+        <img src="./assets/image/webp/grid-12.webp" alt="manga-page-two" class="pointer-events-none h-[480px] max-w-[320px]">
+        <img src="./assets/image/webp/grid-13.webp" alt="manga-page-three" class="pointer-events-none h-[480px] max-w-[320px]">
+        <img src="./assets/image/webp/grid-14.webp" alt="manga-page-four" class="pointer-events-none h-[480px] max-w-[320px]">
+        <img src="./assets/image/webp/grid-15.webp" alt="manga-page-five" class="pointer-events-none h-[480px] max-w-[320px]">
       </div>
     </div>
   </section>
 
 
   <!-- =============how it work========== -->
-  <section
-    class="bg-[url(./assets/image/webp/how-it-work-bg.png)] bg-center bg-no-repeat bg-cover pt-[100px] pb-[200px]">
+  <section id="howit" class="bg-[url(./assets/image/webp/how-it-work-bg.png)] bg-center bg-no-repeat bg-cover pt-[100px] pb-[200px]">
     <div class="container">
       <div
         class=" px-3bg-[url(./assets/image/svg/play-bg.svg)] max-lg:bg-[url(./assets/image/svg/play-bg-small.svg)] bg-no-repeat max-lg:bg-top bg-center w-fit mx-auto h-fit">
@@ -378,7 +375,7 @@
         <p class="text-white font-light text-2xl text-center relative z-10 mb-5 max-lg:mb-10">There’s more than one star
           in the galaxy</p>
         <img id="star" src="./assets/image/webp/roadmap-animation.png" alt="rotate"
-          class="max-w-[700px] max-lg:max-w-[400px] max-lg:max-h-[400px] w-full h-[700px] translate-y-[-56px]">
+          class=" pointer-events-none max-w-[700px] max-lg:max-w-[400px] max-lg:max-h-[400px] w-full h-[700px] translate-y-[-56px]">
       </div>
       <div class="road-map-parent px-5">
         <div class="w-full max-w-[364px] max-md:mx-auto roadmap-box">
@@ -442,7 +439,7 @@
     </div>
   </section>
   <!-- ================team================ -->
-  <section class="px-3 py-[100px] -mt-1 bg-[url(./assets/image/webp/team-bg.webp)] bg-cover bg-center bg-no-repeat">
+  <section id="team" class="px-3 py-[100px] -mt-1 bg-[url(./assets/image/webp/team-bg.webp)] bg-cover bg-center bg-no-repeat">
     <div class="container">
       <div
         class="bg-[url(./assets/image/svg/team-text-bg.svg)] pt-4 max-lg:bg-[url(./assets/image/svg/team-text-bg-small.svg)] mx-auto bg-no-repeat bg-top h-20 w-full max-w-[466px] max-lg:max-w-[233px]">
@@ -457,7 +454,7 @@
         behind this cool project</p>
       <div class="max-lg:hidden flex items-center gap-6">
         <div class="founder">
-          <img src="./assets/image/webp/marco-stein.webp" alt="merco-stein">
+          <img class="pointer-events-none" src="./assets/image/webp/marco-stein.webp" alt="merco-stein">
           <div class="justify-between flex items-center">
             <div
               class=" flex bg-[url(./assets/image/webp/white-bg.webp)] bg-no-repeat bg-center w-full max-w-[237px] h-[58px] items-center">
@@ -470,7 +467,7 @@
             text of the printing and typesetting industry.</p>
         </div>
         <div class="founder">
-          <img src="/assets/image/webp/imogen.webp" alt="imogen">
+          <img class="pointer-events-none" src="/assets/image/webp/imogen.webp" alt="imogen">
           <div class="justify-between flex items-center">
             <div
               class=" flex bg-[url(./assets/image/webp/white-bg.webp)] bg-no-repeat bg-center w-full max-w-[237px] h-[58px] items-center">
@@ -483,7 +480,7 @@
             text of the printing and typesetting industry.</p>
         </div>
         <div class="founder">
-          <img src="/assets/image/webp/rai.webp" alt="rai">
+          <img class="pointer-events-none" src="/assets/image/webp/rai.webp" alt="rai">
           <div class="justify-between flex items-center">
             <div
               class=" flex bg-[url(./assets/image/webp/white-bg.webp)] bg-no-repeat bg-center w-full max-w-[237px] h-[58px] items-center">
@@ -497,7 +494,7 @@
             text of the printing and typesetting industry.</p>
         </div>
         <div class="founder">
-          <img src="/assets/image/webp/kaiya.webp" alt="kaiya">
+          <img class="pointer-events-none" src="/assets/image/webp/kaiya.webp" alt="kaiya">
           <div class="justify-between flex items-center">
             <div
               class=" flex bg-[url(./assets/image/webp/white-bg.webp)] bg-no-repeat bg-center w-full max-w-[237px] h-[58px] items-center">
@@ -512,7 +509,7 @@
       </div>
       <div class="max-lg:hidden flex items-center justify-center gap-6 mt-[100px] max-lg:mt-14 max-md:mt-8">
         <div class="founder">
-          <img src="/assets/image/webp/micho.webp" alt="micho">
+          <img class="pointer-events-none" src="/assets/image/webp/micho.webp" alt="micho">
           <div class="justify-between flex items-center">
             <div
               class=" flex bg-[url(./assets/image/webp/white-bg.webp)] bg-no-repeat bg-center w-full max-w-[237px] h-[58px] items-center">
@@ -525,7 +522,7 @@
             text of the printing and typesetting industry.</p>
         </div>
         <div class="founder">
-          <img src="/assets/image/webp/ryo.webp" alt="ryo">
+          <img class="pointer-events-none" src="/assets/image/webp/ryo.webp" alt="ryo">
           <div class="justify-between flex items-center">
             <div
               class=" flex bg-[url(./assets/image/webp/white-bg.webp)] bg-no-repeat bg-center w-full max-w-[237px] h-[58px] items-center">
@@ -538,7 +535,7 @@
             text of the printing and typesetting industry.</p>
         </div>
         <div class="founder">
-          <img src="/assets/image/webp/tianna.webp" alt="tianna">
+          <img class="pointer-events-none" src="/assets/image/webp/tianna.webp" alt="tianna">
           <div class="justify-between flex items-center">
             <div
               class=" flex bg-[url(./assets/image/webp/white-bg.webp)] bg-no-repeat bg-center w-full max-w-[237px] h-[58px] items-center">
@@ -556,7 +553,7 @@
 
       <div class="lg:!hidden items-center justify-center gap-6 slider overflow-hidden">
         <div class="founder">
-          <img src="./assets/image/webp/marco-stein.webp" alt="merco-stein">
+          <img class="pointer-events-none" src="./assets/image/webp/marco-stein.webp" alt="merco-stein">
           <div class="justify-between flex items-center">
             <div
               class=" flex bg-[url(./assets/image/webp/white-bg.webp)] bg-no-repeat bg-center w-full max-w-[237px] h-[58px] items-center">
@@ -569,7 +566,7 @@
             text of the printing and typesetting industry.</p>
         </div>
         <div class="founder">
-          <img src="/assets/image/webp/imogen.webp" alt="imogen">
+          <img class="pointer-events-none" src="/assets/image/webp/imogen.webp" alt="imogen">
           <div class="justify-between flex items-center">
             <div
               class=" flex bg-[url(./assets/image/webp/white-bg.webp)] bg-no-repeat bg-center w-full max-w-[237px] h-[58px] items-center">
@@ -582,7 +579,7 @@
             text of the printing and typesetting industry.</p>
         </div>
         <div class="founder">
-          <img src="/assets/image/webp/rai.webp" alt="rai">
+          <img class="pointer-events-none" src="/assets/image/webp/rai.webp" alt="rai">
           <div class="justify-between flex items-center">
             <div
               class=" flex bg-[url(./assets/image/webp/white-bg.webp)] bg-no-repeat bg-center w-full max-w-[237px] h-[58px] items-center">
@@ -596,7 +593,7 @@
             text of the printing and typesetting industry.</p>
         </div>
         <div class="founder">
-          <img src="/assets/image/webp/kaiya.webp" alt="kaiya">
+          <img class="pointer-events-none" src="/assets/image/webp/kaiya.webp" alt="kaiya">
           <div class="justify-between flex items-center">
             <div
               class=" flex bg-[url(./assets/image/webp/white-bg.webp)] bg-no-repeat bg-center w-full max-w-[237px] h-[58px] items-center">
@@ -609,7 +606,7 @@
             text of the printing and typesetting industry.</p>
         </div>
         <div class="founder">
-          <img src="/assets/image/webp/micho.webp" alt="micho">
+          <img class="pointer-events-none" src="/assets/image/webp/micho.webp" alt="micho">
           <div class="justify-between flex items-center">
             <div
               class=" flex bg-[url(./assets/image/webp/white-bg.webp)] bg-no-repeat bg-center w-full max-w-[237px] h-[58px] items-center">
@@ -622,7 +619,7 @@
             text of the printing and typesetting industry.</p>
         </div>
         <div class="founder">
-          <img src="/assets/image/webp/ryo.webp" alt="ryo">
+          <img class="pointer-events-none" src="/assets/image/webp/ryo.webp" alt="ryo">
           <div class="justify-between flex items-center">
             <div
               class=" flex bg-[url(./assets/image/webp/white-bg.webp)] bg-no-repeat bg-center w-full max-w-[237px] h-[58px] items-center">
@@ -635,7 +632,7 @@
             text of the printing and typesetting industry.</p>
         </div>
         <div class="founder">
-          <img src="/assets/image/webp/tianna.webp" alt="tianna">
+          <img class="pointer-events-none" src="/assets/image/webp/tianna.webp" alt="tianna">
           <div class="justify-between flex items-center">
             <div
               class=" flex bg-[url(./assets/image/webp/white-bg.webp)] bg-no-repeat bg-center w-full max-w-[237px] h-[58px] items-center">
