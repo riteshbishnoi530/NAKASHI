@@ -65,26 +65,6 @@ radioButtons.forEach(radio => {
 });
 document.querySelector('input[name="accordion"]:checked').dispatchEvent(new Event('change'));
 
-// ====================slider=======
-$(".anime-slider").on(
-  "init afterChange",
-  function (event, slick, currentSlide) {
-    $(".anime-slider .slick-slide").css("opacity", "0.5"); 
-    $(".anime-slider .slick-active").css("opacity", "1");
-  }
-);
-
-$(".anime-slider").slick("slickGoTo", 0);
-
-$(".next-arrow").on("click", function () {
-  $(".anime-slider").slick("slickNext");
-});
-
-$(".prev-arrow").on("click", function () {
-  $(".anime-slider").slick("slickPrev"); 
-});
-
-
 // ==========back to top=============
 const backTop = document.querySelector(".back-to-top");
 backTop.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
