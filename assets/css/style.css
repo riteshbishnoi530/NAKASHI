@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/reality-hyper');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sawarabi+Gothic&display=swap');
+/* ====================custom font size============= */
+.text-custom-sm{
+    font-size: 32px;
+  }
+  .text-custom-md{
+    font-size: 40px;
+  }
+  .text-custom-lg{
+    font-size: 64px;
+  }
+  .text-custom-xl{
+    font-size: 144px;
+  }
+  .shadow-custom-sm{
+    text-shadow:  0px 0px 40px #FFFFFF;
+  }
+  .grid::-webkit-scrollbar{
+    display: none;
+  }
+
+  .roadmap-box .point-hover:hover,
+  .roadmap-box:hover .point-hover {
+    background-color: #FFFFFF !important;
+  }
+
+  .founder{
+    max-width: 267px;
+  }
+
+  .slick-track{
+    display: flex !important;
+    gap: 24px !important;
+  }
+
+  @media(max-width:1024.99px){
+    .text-custom-lg{
+      font-size: 64px;
+    }
+  }
+
+  @media(max-width:640.99px){
+    .founder{
+      max-width: 245px;
+    }
+  }
