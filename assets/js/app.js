@@ -48,13 +48,19 @@ const navmenu = () => {
 
   // =============video-play===============
   document
-      .getElementById("play-video")
-      .addEventListener("click", function () {
-        const videoDiv = document.querySelector(".video");
-        const videoURL = "https://www.youtube.com/embed/pge4IvwQFA8?start=138";
+  .getElementById("play-video")
+  .addEventListener("click", function () {
+    const videoDiv = document.querySelector(".video");
+    const videoURL = "https://www.youtube.com/embed/pge4IvwQFA8?start=138";
 
-        videoDiv.innerHTML = <iframe width="100%" height="100%" src="https://www.youtube.com/embed/pge4IvwQFA8?si=LZ6AwY9R-mx_FaCC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy ="strict-origin-when-cross-origin" allowfullscreen></iframe>;
-      });
+    videoDiv.innerHTML = `
+      <iframe width="100%" height="100%" src="${videoURL}" 
+              title="YouTube video player" frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerPolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>`;
+  });
+
 
 // ==============character
   $('.slider-2').slick({
