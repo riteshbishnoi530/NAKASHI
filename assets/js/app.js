@@ -66,7 +66,7 @@ const navmenu = () => {
   $('.slider-2').slick({
     infinite: true,
     speed: 300,
-    slidesToShow: 1,
+    slidesToShow: 1.5,
     adaptiveHeight: true,
     prevArrow: $('.prev-arrow'),
       nextArrow: $('.next-arrow'),
