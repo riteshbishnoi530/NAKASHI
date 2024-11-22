@@ -35,6 +35,42 @@
     gap: 24px !important;
   }
 
+  @keyframes slide-right {
+    0% {
+      transform: translateX(0%);
+    }
+
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translateX(-50%);
+    }
+
+    100% {
+      transform: translateX(0%);
+    }
+  }
+.slide-scroll {
+    animation: slide 10s linear infinite;
+  }
+
+
+  .slide-scroll-left {
+    animation: slide-right 10s linear infinite;
+  }
+
+  .slide-scroll-left:hover {
+    animation-play-state: paused;
+  }
+
+  .slide-scroll:hover {
+    animation-play-state: paused;
+  }
+
   @media(max-width:1024.99px){
     .text-custom-lg{
       font-size: 64px;

@@ -88,13 +88,13 @@
             <div id="mobile_view"
               class="max-lg:fixed flex flex-col justify-center items-center max-lg:bg-transparent backdrop-blur-[60px] max-lg:w-full max-lg:h-full max-lg:-top-full max-lg:-right-full transition-all ease-in-out duration-300">
               <ul class="flex gap-10 max-lg:text-center max-lg:flex-col">
-                <li><a class="text-sm font-normal" href="#about">ABOUT</a></li>
-                <li><a class="text-sm font-normal" href="#charactor">CHARACTER</a></li>
-                <li><a class="text-sm font-normal" href="#gallery">GALLERY</a></li>
-                <li><a class="text-sm font-normal" href="#howit">HOW IT WORKS</a></li>
-                <li><a class="text-sm font-normal" href="#roadmap">ROADMAP</a></li>
-                <li><a class="text-sm font-normal" href="#team">TEAM</a></li>
-                <li><a class="text-sm font-normal" href="#faq">FAQ</a></li>
+                <li><a class="text-sm font-normal" onclick="navmenu()" href="#about">ABOUT</a></li>
+                <li><a class="text-sm font-normal" onclick="navmenu()" href="#charactor">CHARACTER</a></li>
+                <li><a class="text-sm font-normal" onclick="navmenu()" href="#gallery">GALLERY</a></li>
+                <li><a class="text-sm font-normal" onclick="navmenu()" href="#howit">HOW IT WORKS</a></li>
+                <li><a class="text-sm font-normal" onclick="navmenu()" href="#roadmap">ROADMAP</a></li>
+                <li><a class="text-sm font-normal" onclick="navmenu()" href="#team">TEAM</a></li>
+                <li><a class="text-sm font-normal" onclick="navmenu()" href="#faq">FAQ</a></li>
               </ul>
               <div class="flex gap-4 justify-end mt-12 lg:hidden">
                 <a href=""><img class="transition-all ease-linear duration-300 bg-white hover:bg-offBlue bg-opacity-10 rounded-full"
@@ -194,9 +194,9 @@
 
   <!-- =============character=================== -->
   <section id="charactor" class="px-3 flex items-center pt-[100px] pb-[200px] bg-[url(./assets/image/webp/slider-bg.webp)] bg-cover bg-no-repeat relative -mt-1">
-    <div class="container">
+    <div class="max-w-[1440px] w-full mx-auto">
       <div class="flex items-center max-lg:flex-col">
-        <div class="w-6/12 max-lg:w-full">
+        <div class="pl-[150px] max-lg:pl-0 w-6/12 max-lg:w-full">
           <div
             class="max-lg:mx-auto max-lg:bg-[url(./assets/image/svg/chara-small.svg)] h-fit bg-[url(./assets/image/svg/chara.svg)]  bg-no-repeat bg-center max-w-[531px]">
             <p class="text-white text-[64px] font-normal font-hyper max-lg:text-4xl max-lg:text-center">CHARACTER</p>
@@ -225,28 +225,22 @@
         </div>
         
         <div class="w-6/12 max-lg:w-full">
-          <div>
-            <div class="flex justify-end">
-              <p
-                class="prev-arrow bg-[url(assets/images/png/prevbtn.png)] bg-no-repeat bg-center w-[80px] h-[60px flex items-center justify-center">
-                <img src="/assets/image/svg/prev-arrow.svg" alt="arrow" />
-              </p>
-              <p
-                class="next-arrow bg-[url(assets/images/png/next-btn.png)] bg-no-repeat bg-center w-[80px] h-[60px flex items-center justify-center">
-                <img src="/assets/image/svg/next-arrow.svg" alt="arrow" />
-              </p>
-            </div>
-            <div class="anime-slider flex items-center gap-6 overflow-hidden">
-              <img src="/assets/image/webp/slider-1-img.webp" alt="slider-1-img"
-                class="w-full max-w-[600px] h-[800px] pointer-events-none" />
-              <img src="/assets/image/webp/slider-2-img.webp" alt="slider-2-img"
-                class="w-full max-w-[600px] h-[800px] pointer-events-none" />
-              <img src="/assets/image/webp/slider-1-img.webp" alt="slider-1-img"
-                class="w-full max-w-[600px] h-[800px] pointer-events-none" />
-              <img src="/assets/image/webp/slider-2-img.webp" alt="slider-2-img"
-                class="w-full max-w-[600px] h-[800px] pointer-events-none" />
-            </div>
+          <div class="flex">
+            <p
+              class="prev-arrow bg-[url(assets/images/png/prevbtn.png)] bg-no-repeat bg-center w-[80px] h-[60px flex items-center justify-center">
+              <img src="/assets/image/svg/prev-arrow.svg" alt="arrow" />
+            </p>
+            <p
+              class="next-arrow bg-[url(assets/images/png/next-btn.png)] bg-no-repeat bg-center w-[80px] h-[60px flex items-center justify-center">
+              <img src="/assets/image/svg/next-arrow.svg" alt="arrow" />
+            </p>
           </div>
+            <div class="slider-2 flex overflow-hidden">
+              <img src="/assets/image/webp/slider-1-img.webp" alt="slider-1-img"
+                class="w-full max-w-[600px] pointer-events-none" />
+              <img src="/assets/image/webp/slider-2-img.webp" alt="slider-2-img"
+                class="w-full max-w-[600px] pointer-events-none" />
+            </div>
         </div>
       </div>
     </div>
@@ -310,29 +304,44 @@
         </div>
       </div>
     </div>
-    <div class="flex flex-col gap-y-5">
-      <div class="grid grid-flow-col gap-4 overflow-x-auto">
-        <img src="./assets/image/webp/grid-1.webp" alt="manga-page-one" class="pointer-events-none max-w-[320px] h-[480px]">
-        <img src="./assets/image/webp/grid-2.webp" alt="manga-page-two" class="pointer-events-none h-[480px] max-w-[320px]">
-        <img src="./assets/image/webp/grid-3.webp" alt="manga-page-three" class="pointer-events-none h-[480px] max-w-[320px]">
-        <img src="./assets/image/webp/grid-4.webp" alt="manga-page-four" class="pointer-events-none h-[480px] max-w-[320px]">
-        <img src="./assets/image/webp/grid-5.webp" alt="manga-page-five" class="pointer-events-none h-[480px] max-w-[320px]">
+    <div class="flex flex-col gap-y-5 overflow-hidden">
+      <div class="grid grid-flow-col gap-4 slide-scroll">
+        <img src="./assets/image/webp/grid-1.webp" alt="manga-page-one" class="max-md:h-[192px] pointer-events-none max-w-[320px] h-[480px]">
+        <img src="./assets/image/webp/grid-2.webp" alt="manga-page-two" class="max-md:h-[192px] pointer-events-none h-[480px] max-w-[320px]">
+        <img src="./assets/image/webp/grid-3.webp" alt="manga-page-three" class="max-md:h-[192px] pointer-events-none h-[480px] max-w-[320px]">
+        <img src="./assets/image/webp/grid-4.webp" alt="manga-page-four" class="max-md:h-[192px] pointer-events-none h-[480px] max-w-[320px]">
+        <img src="./assets/image/webp/grid-5.webp" alt="manga-page-five" class="max-md:h-[192px] pointer-events-none h-[480px] max-w-[320px]">
+        <img src="./assets/image/webp/grid-1.webp" alt="manga-page-one" class="max-md:h-[192px] pointer-events-none max-w-[320px] h-[480px]">
+        <img src="./assets/image/webp/grid-2.webp" alt="manga-page-two" class="max-md:h-[192px] pointer-events-none h-[480px] max-w-[320px]">
+        <img src="./assets/image/webp/grid-3.webp" alt="manga-page-three" class="max-md:h-[192px] pointer-events-none h-[480px] max-w-[320px]">
+        <img src="./assets/image/webp/grid-4.webp" alt="manga-page-four" class="max-md:h-[192px] pointer-events-none h-[480px] max-w-[320px]">
+        <img src="./assets/image/webp/grid-5.webp" alt="manga-page-five" class="max-md:h-[192px] pointer-events-none h-[480px] max-w-[320px]">
       </div>
 
-      <div class="grid grid-flow-col gap-4 overflow-x-auto">
-        <img src="./assets/image/webp/grid-6.webp" alt="manga-page-one" class="pointer-events-none max-w-[320px] h-[480px]">
-        <img src="./assets/image/webp/grid-7.webp" alt="manga-page-two" class="pointer-events-none h-[480px] max-w-[320px]">
-        <img src="./assets/image/webp/grid-8.webp" alt="manga-page-three" class="pointer-events-none h-[480px] max-w-[320px]">
-        <img src="./assets/image/webp/grid-9.webp" alt="manga-page-four" class="pointer-events-none h-[480px] max-w-[320px]">
-        <img src="./assets/image/webp/grid-10.webp" alt="manga-page-five" class="pointer-events-none h-[480px] max-w-[320px]">
+      <div class="grid grid-flow-col gap-4 slide-scroll-left">
+        <img src="./assets/image/webp/grid-6.webp" alt="manga-page-one" class="max-md:h-[192px] pointer-events-none max-w-[320px] h-[480px]">
+        <img src="./assets/image/webp/grid-7.webp" alt="manga-page-two" class="max-md:h-[192px] pointer-events-none h-[480px] max-w-[320px]">
+        <img src="./assets/image/webp/grid-8.webp" alt="manga-page-three" class="max-md:h-[192px] pointer-events-none h-[480px] max-w-[320px]">
+        <img src="./assets/image/webp/grid-9.webp" alt="manga-page-four" class="max-md:h-[192px] pointer-events-none h-[480px] max-w-[320px]">
+        <img src="./assets/image/webp/grid-10.webp" alt="manga-page-five" class="max-md:h-[192px] pointer-events-none h-[480px] max-w-[320px]">
+        <img src="./assets/image/webp/grid-6.webp" alt="manga-page-one" class="max-md:h-[192px] pointer-events-none max-w-[320px] h-[480px]">
+        <img src="./assets/image/webp/grid-7.webp" alt="manga-page-two" class="max-md:h-[192px] pointer-events-none h-[480px] max-w-[320px]">
+        <img src="./assets/image/webp/grid-8.webp" alt="manga-page-three" class="max-md:h-[192px] pointer-events-none h-[480px] max-w-[320px]">
+        <img src="./assets/image/webp/grid-9.webp" alt="manga-page-four" class="max-md:h-[192px] pointer-events-none h-[480px] max-w-[320px]">
+        <img src="./assets/image/webp/grid-10.webp" alt="manga-page-five" class="max-md:h-[192px] pointer-events-none h-[480px] max-w-[320px]">
       </div>
 
-      <div class="grid grid-flow-col gap-4 overflow-x-auto">
-        <img src="./assets/image/webp/grid-11.webp" alt="manga-page-one" class="pointer-events-none max-w-[320px] h-[480px]">
-        <img src="./assets/image/webp/grid-12.webp" alt="manga-page-two" class="pointer-events-none h-[480px] max-w-[320px]">
-        <img src="./assets/image/webp/grid-13.webp" alt="manga-page-three" class="pointer-events-none h-[480px] max-w-[320px]">
-        <img src="./assets/image/webp/grid-14.webp" alt="manga-page-four" class="pointer-events-none h-[480px] max-w-[320px]">
-        <img src="./assets/image/webp/grid-15.webp" alt="manga-page-five" class="pointer-events-none h-[480px] max-w-[320px]">
+      <div class="grid grid-flow-col gap-4 slide-scroll">
+        <img src="./assets/image/webp/grid-11.webp" alt="manga-page-one" class="max-md:h-[192px] pointer-events-none max-w-[320px] h-[480px]">
+        <img src="./assets/image/webp/grid-12.webp" alt="manga-page-two" class="max-md:h-[192px] pointer-events-none h-[480px] max-w-[320px]">
+        <img src="./assets/image/webp/grid-13.webp" alt="manga-page-three" class="max-md:h-[192px] pointer-events-none h-[480px] max-w-[320px]">
+        <img src="./assets/image/webp/grid-14.webp" alt="manga-page-four" class="max-md:h-[192px] pointer-events-none h-[480px] max-w-[320px]">
+        <img src="./assets/image/webp/grid-15.webp" alt="manga-page-five" class="max-md:h-[192px] pointer-events-none h-[480px] max-w-[320px]">
+        <img src="./assets/image/webp/grid-11.webp" alt="manga-page-one" class="max-md:h-[192px] pointer-events-none max-w-[320px] h-[480px]">
+        <img src="./assets/image/webp/grid-12.webp" alt="manga-page-two" class="max-md:h-[192px] pointer-events-none h-[480px] max-w-[320px]">
+        <img src="./assets/image/webp/grid-13.webp" alt="manga-page-three" class="max-md:h-[192px] pointer-events-none h-[480px] max-w-[320px]">
+        <img src="./assets/image/webp/grid-14.webp" alt="manga-page-four" class="max-md:h-[192px] pointer-events-none h-[480px] max-w-[320px]">
+        <img src="./assets/image/webp/grid-15.webp" alt="manga-page-five" class="max-md:h-[192px] pointer-events-none h-[480px] max-w-[320px]">
       </div>
     </div>
   </section>
@@ -353,10 +362,12 @@
           industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
           printer took a galley of type and scrambled it to make a type specimen book.</p>
       </div>
-      <img class="mx-auto mt-12" src="./assets/image/svg/blue-down-arrow.svg" alt="blue-down-arrow">
-      <div class="relative video bg-[url(./assets/image/webp/video.webp)] bg-center bg-cover bg-no-repeat w-full  h-[642px]">
-        <img id="play-video" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" src="./assets/image/svg/play-btn.svg"
-          alt="play-btn">
+      <img class="mx-auto mt-12 max-sm:max-w-[300px]" src="./assets/image/svg/blue-down-arrow.svg" alt="blue-down-arrow">
+      <div
+        class="video bg-[url(./assets/image/webp/video.webp)] bg-center bg-no-repeat bg-cover flex items-center justify-center w-full max-w-[1140px] h-[642px] max-md:h-[212px] mb-[210px] max-md:mb-12">
+        <div id="play-video" class="w-[64px] h-[64px] rounded-full bg-grey flex items-center justify-center">
+          <img src="./assets/image/svg/play-btn.svg" alt="play-btn" />
+        </div>
       </div>
     </div>
   </section>
